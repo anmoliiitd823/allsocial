@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-<<<<<<< HEAD
+
   has_attached_file :profile_picture, default_url: "/system/images/:style/missing.png"
   validates_attachment_content_type :profile_picture, content_type: /\Aimage\/.*\z/
 
@@ -46,8 +46,8 @@ end
 
 
 
-=======
+
   has_many :comments, dependent: :destroy
   has_many :posts, dependent: :destroy
 end
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
