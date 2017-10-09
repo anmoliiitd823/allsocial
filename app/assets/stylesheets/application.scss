@@ -54,3 +54,54 @@
  	}
 
  }
+<<<<<<< HEAD
+
+
+@media screen and (max-width: 480px){
+
+	#auth-links{
+		border-radius: 1px solid black;
+		width: 35px;
+		height: 35px;
+		background-color: red;
+		margin-top: 25px;
+		position: relative;
+		ul{
+			display:none !important;
+			flex-direction: column !important;
+			position: absolute;
+			top: 25px;
+			left: -105px;
+			padding-left: 0;
+		    background: grey;
+		
+   			
+   			li{
+			    color: white;
+   			}
+		}
+
+		&:hover ul{
+			display: flex !important;
+		}
+
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960

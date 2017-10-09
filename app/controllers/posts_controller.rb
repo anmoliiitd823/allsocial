@@ -4,6 +4,38 @@ class PostsController < ApplicationController
   before_action :authorize_user, only: [:destroy]
 
   def index
+<<<<<<< HEAD
+    query = params[:q]
+  	@post = Post.new
+  	@comment = Comment.new
+    if (query.blank?)
+      @posts = Post.all
+    else
+  	 @posts = Post.where('content like ?', ('%' + query + '%')).reverse()
+    end
+    @users=User.all
+    @user=current_user
+    friend_obj=Friendship.new
+    @all_req_user=friend_obj.all_requests_user(current_user)
+    @all_u_frnds=friend_obj.all_user_requested_friends(current_user)
+    @all_i_frnds=friend_obj.all_user_accepted_friends(current_user)
+    @all_my_req=friend_obj.all_requests_by_user(current_user)
+    @n_elg_frnds=friend_obj.all_non_eligible_friends(current_user)
+    return @posts
+  end
+
+  def create
+  	@post = Post.new(post_params)
+  	@post.user = current_user
+  	@post.save
+  	@comment = Comment.new
+  end
+
+  def destroy
+    @post_id = @post.id
+  	@post.destroy
+  	
+=======
   	@post = Post.new
   	@comment = Comment.new
   	@posts = Post.all
@@ -21,6 +53,7 @@ class PostsController < ApplicationController
   def destroy
   	@post.destroy
   	return redirect_to action: "index"
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
   end
 
   private
@@ -42,3 +75,17 @@ class PostsController < ApplicationController
   end
 
 end
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+=======
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960

@@ -5,7 +5,10 @@
 #new-post-form-container{
 	
     width: 75%;
+<<<<<<< HEAD
+=======
     min-width: 360px;
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
     text-align: center;
     margin: 0 auto;
 
@@ -20,7 +23,10 @@
 
     textarea{
     	width: 85%;
+<<<<<<< HEAD
+=======
     	min-width: 360px;
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
     }
 
     input[type="submit"]{
@@ -34,7 +40,10 @@
 #posts-list-container{
 
 	width: 75%;
+<<<<<<< HEAD
+=======
 	min-width: 360px;
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
 	margin: 0 auto;
 	
 	#posts-list{
@@ -63,7 +72,10 @@
 			.post-comments-container{
 				width: 50%;
 			    margin: 10px auto;
+<<<<<<< HEAD
+=======
 			    min-width: 300px;
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
 
 			    form{
 			    	display: flex;
@@ -109,6 +121,36 @@
 }
 
 
+<<<<<<< HEAD
+#page-container{
+	display: flex;
+	flex-direction: row;
+
+	#posts-container{
+		width: 70%;
+	}
+
+	#friends-container{
+		width: 25%;
+	    border-left: 1px solid black;
+    	padding-left: 15px;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	#friends-container{
+		display: none;
+	}
+
+	#posts-container{
+		width: 100% !important;
+	}
+}
+
+
+=======
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
 
 
 

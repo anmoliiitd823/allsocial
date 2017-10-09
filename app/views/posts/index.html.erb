@@ -1,5 +1,51 @@
 <main>
 
+<<<<<<< HEAD
+
+	<div id="page-container">
+		<div id="posts-container">
+			<% if user_signed_in? %>
+			<div id="new-post-form-container">
+				<%= form_for @post, remote: true do |f| %>
+					<%= f.label :content, "Add Post" %>
+					<%= f.text_area :content, placeholder: "Type Here" %>
+					<%= f.submit %>
+				<% end %>
+			</div>
+			<% end %>
+
+			<div id="posts-list-container">
+				<ul id="posts-list">
+					<% @posts.each do |post| %>
+						<%= render 'post', p: post %>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	<% if user_signed_in? %>
+	<%= render 'hangout' %>
+	<% end %>	
+		
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
 	<% if user_signed_in? %>
 	<div id="new-post-form-container">
 		<%= form_for @post do |f| %>
@@ -59,3 +105,4 @@
 
 
 </main>
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960

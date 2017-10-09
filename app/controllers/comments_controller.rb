@@ -9,15 +9,25 @@ class CommentsController < ApplicationController
   	@comment = Comment.new(comment_params)
   	@comment.user = current_user
   	@comment.save
+<<<<<<< HEAD
+    @post = @comment.post
+=======
   	return redirect_to posts_path
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
 
   end
 
   def destroy
+<<<<<<< HEAD
+  	@comment_id = @comment.id
+
+  	@comment.destroy
+=======
   	@post = @comment.post
 
   	@comment.destroy
   	return redirect_to posts_path
+>>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
   end
 
   private
