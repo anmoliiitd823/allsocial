@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
+
 ActiveRecord::Schema.define(version: 20171008060535) do
-=======
+
 ActiveRecord::Schema.define(version: 20170917070341) do
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
 
   create_table "comments", force: :cascade do |t|
     t.integer  "user_id",    null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20170917070341) do
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
-<<<<<<< HEAD
+
   create_table "friendships", force: :cascade do |t|
     t.integer  "user_id",                    null: false
     t.integer  "friend_id",                  null: false
@@ -51,8 +51,6 @@ ActiveRecord::Schema.define(version: 20170917070341) do
   add_index "likes", ["likeable_type", "likeable_id"], name: "index_likes_on_likeable_type_and_likeable_id"
   add_index "likes", ["user_id"], name: "index_likes_on_user_id"
 
-=======
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
   create_table "posts", force: :cascade do |t|
     t.text     "content",    null: false
     t.datetime "created_at", null: false
@@ -63,21 +61,21 @@ ActiveRecord::Schema.define(version: 20170917070341) do
   add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
   create_table "users", force: :cascade do |t|
-<<<<<<< HEAD
+
     t.string   "email",                        default: "", null: false
     t.string   "encrypted_password",           default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.integer  "sign_in_count",                default: 0,  null: false
-=======
+
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.integer  "sign_in_count",          default: 0,  null: false
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
@@ -86,7 +84,7 @@ ActiveRecord::Schema.define(version: 20170917070341) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
-<<<<<<< HEAD
+
     t.integer  "failed_attempts",              default: 0,  null: false
     t.string   "unlock_token"
     t.datetime "locked_at"
@@ -98,14 +96,13 @@ ActiveRecord::Schema.define(version: 20170917070341) do
     t.string   "profile_picture_file_name"
     t.string   "profile_picture_content_type"
     t.integer  "profile_picture_file_size"
-    t.datetime "profile_picture_updated_at"
-=======
+    t.datetime "profile_picture_updated_at"=======
     t.integer  "failed_attempts",        default: 0,  null: false
     t.string   "unlock_token"
     t.datetime "locked_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
