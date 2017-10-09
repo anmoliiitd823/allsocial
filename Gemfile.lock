@@ -42,12 +42,11 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (9.1.0)
-<<<<<<< HEAD
+
     climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
-=======
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -56,20 +55,20 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
-<<<<<<< HEAD
+
     crass (1.0.2)
     debug_inspector (0.0.3)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.2)
-=======
+
     debug_inspector (0.0.3)
     devise (4.2.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.1)
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
       responders
       warden (~> 1.2.3)
     erubis (2.7.0)
@@ -86,19 +85,19 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.6)
-<<<<<<< HEAD
+
     loofah (2.1.1)
       crass (~> 1.0.2)
-=======
+
     loofah (2.0.3)
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
       nokogiri (>= 1.5.9)
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-<<<<<<< HEAD
+
     mimemagic (0.3.2)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
@@ -112,14 +111,14 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
-=======
+
     mini_portile2 (2.2.0)
     minitest (5.10.3)
     multi_json (1.12.2)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     orm_adapter (0.5.0)
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
     rack (1.6.8)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -152,16 +151,16 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
-<<<<<<< HEAD
+
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
     sass (3.5.2)
-=======
+
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     sass (3.5.1)
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -195,11 +194,11 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-<<<<<<< HEAD
+
     warden (1.2.7)
-=======
+
     warden (1.2.6)
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
       rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
@@ -216,10 +215,10 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD
+
   paperclip (~> 5.0.0)
-=======
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
+
   rails (= 4.2.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -230,8 +229,8 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-<<<<<<< HEAD
+
    1.16.0.pre.3
-=======
+
    1.15.0
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
