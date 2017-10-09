@@ -3,7 +3,6 @@
 <head>
   <title>Allsocial</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<<<<<<< HEAD
   <%= stylesheet_link_tag    'components/test', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'components/test', 'data-turbolinks-track' => true %>
@@ -11,9 +10,7 @@
   <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
-=======
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -44,12 +41,9 @@
 					<% end %>
 				<% else %>
 				<li>
-<<<<<<< HEAD
 					<p><%= current_user.email %></p>
 				</li>
 				<li>
-=======
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
 					<p><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></p>
 				</li>
 				<% end %>
