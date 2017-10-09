@@ -96,7 +96,7 @@ ActiveRecord::Schema.define(version: 20170917070341) do
     t.string   "profile_picture_file_name"
     t.string   "profile_picture_content_type"
     t.integer  "profile_picture_file_size"
-    t.datetime "profile_picture_updated_at"=======
+    t.datetime "profile_picture_updated_at"
     t.integer  "failed_attempts",        default: 0,  null: false
     t.string   "unlock_token"
     t.datetime "locked_at"
