@@ -1,8 +1,7 @@
 class Friendship < ActiveRecord::Base
   belongs_to :user
   belongs_to :friend, class_name: 'User'
-<<<<<<< HEAD
-#Product.where.not(id: params[:id])
+
   def all_non_eligible_friends(user_id)
   	non_eligible_friends=Friendship.where(user_id: user_id).pluck(:friend_id)
   	non_eligible_inverse_friends=Friendship.where(friend_id: user_id).pluck(:user_id)
@@ -22,6 +21,5 @@ class Friendship < ActiveRecord::Base
   def all_requests_user(user_id)
 	return Friendship.where(confirmed: false,friend_id: user_id)
   end
-=======
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
 end
