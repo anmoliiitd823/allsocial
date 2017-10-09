@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   before_action :authorize_user, only: [:destroy]
 
   def index
-<<<<<<< HEAD
     query = params[:q]
   	@post = Post.new
   	@comment = Comment.new
@@ -35,7 +34,6 @@ class PostsController < ApplicationController
     @post_id = @post.id
   	@post.destroy
   	
-=======
   	@post = Post.new
   	@comment = Comment.new
   	@posts = Post.all
@@ -53,7 +51,6 @@ class PostsController < ApplicationController
   def destroy
   	@post.destroy
   	return redirect_to action: "index"
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
   end
 
   private
@@ -75,7 +72,6 @@ class PostsController < ApplicationController
   end
 
 end
-<<<<<<< HEAD
 
 
 
@@ -87,5 +83,4 @@ end
 
 
 
-=======
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
+
