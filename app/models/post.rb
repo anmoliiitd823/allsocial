@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
 
 	belongs_to :user
 	has_many :comments, dependent: :destroy
-<<<<<<< HEAD
+
 
 	has_many :likes, as: :likeable
 
@@ -20,6 +20,4 @@ class Post < ActiveRecord::Base
 		end
 	end
 
-=======
->>>>>>> 9c85a46a125b76c917caa1a48018fc6aad094960
 end
