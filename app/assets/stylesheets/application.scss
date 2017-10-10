@@ -20,6 +20,10 @@
  }
 
  #body-header{
+
+ 	background-color: #4267b2;
+
+
  	padding: 0 15px;
  	display: flex;
  	flex-direction: row;
@@ -29,9 +33,23 @@
  		width: 75px;
 
  		img{
- 			width: 100%;
+
+ 			    width: 61%;
+    			margin-top: 16px;
  		}
  	}
+
+ 	#user-search{
+ 		    margin-top: 20px;
+		    margin-left: -369px;
+		    width: 100%;
+		    padding: 11px 230px;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+ 	}
+
 
 
  	#auth-links{
@@ -54,7 +72,6 @@
  	}
 
  }
-
 
 
 @media screen and (max-width: 480px){
@@ -89,7 +106,6 @@
 	}
 
 }
-
 
 
 

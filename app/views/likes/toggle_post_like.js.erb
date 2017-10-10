@@ -1,2 +1,4 @@
 $('#post-<%= @post.id %> .post-likes .user-like-status a').html("<%= @new_like_status %>");
-$('#post-<%= @post.id %> .post-likes .user-like-count').html("<%= @post.likes.length %> Likes");
+
+$('#post-<%= @post.id %> .post-likes .user-like-count').html("<%= @post.likes.length %>");
+

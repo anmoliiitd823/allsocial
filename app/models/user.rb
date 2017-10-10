@@ -4,7 +4,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-
   has_attached_file :profile_picture, default_url: "/system/images/:style/missing.png"
   validates_attachment_content_type :profile_picture, content_type: /\Aimage\/.*\z/
 
@@ -20,7 +19,7 @@ class User < ActiveRecord::Base
   has_many :inverse_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
 
   has_many :inverse_friends, through: :inverse_friendships, source: :user
-  
+
 
   def get_all_friends
   	friend_ids = self.friends.all.pluck(:id)
@@ -34,6 +33,11 @@ class User < ActiveRecord::Base
   end
 
 end
+
+
+
+
+
 
 
 

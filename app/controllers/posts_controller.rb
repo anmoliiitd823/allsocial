@@ -12,14 +12,6 @@ class PostsController < ApplicationController
     else
   	 @posts = Post.where('content like ?', ('%' + query + '%')).reverse()
     end
-    @users=User.all
-    @user=current_user
-    friend_obj=Friendship.new
-    @all_req_user=friend_obj.all_requests_user(current_user)
-    @all_u_frnds=friend_obj.all_user_requested_friends(current_user)
-    @all_i_frnds=friend_obj.all_user_accepted_friends(current_user)
-    @all_my_req=friend_obj.all_requests_by_user(current_user)
-    @n_elg_frnds=friend_obj.all_non_eligible_friends(current_user)
     return @posts
   end
 
@@ -34,23 +26,6 @@ class PostsController < ApplicationController
     @post_id = @post.id
   	@post.destroy
   	
-  	@post = Post.new
-  	@comment = Comment.new
-  	@posts = Post.all
-  end
-
-  def create
-
-  	@post = Post.new(post_params)
-  	@post.user = current_user
-  	@post.save
-  	return redirect_to action: "index"
-
-  end
-
-  def destroy
-  	@post.destroy
-  	return redirect_to action: "index"
   end
 
   private
@@ -72,7 +47,6 @@ class PostsController < ApplicationController
   end
 
 end
-
 
 
 

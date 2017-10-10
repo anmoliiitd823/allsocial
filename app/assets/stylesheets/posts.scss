@@ -4,10 +4,8 @@
 
 #new-post-form-container{
 	
-    width: 75%;
 
-
-    min-width: 360px;
+    width: 93%;
 
     text-align: center;
     margin: 0 auto;
@@ -22,10 +20,10 @@
     }
 
     textarea{
+
+    	height: 100px;
+
     	width: 85%;
-
-    	min-width: 360px;
-
     }
 
     input[type="submit"]{
@@ -39,9 +37,6 @@
 #posts-list-container{
 
 	width: 75%;
-
-	min-width: 360px;
-
 	margin: 0 auto;
 	
 	#posts-list{
@@ -62,31 +57,53 @@
 				}
 
 				.post-destroy-link a{
+
+
 					text-decoration: none;
-					color: red;
+					color: white;
 				}
+				a{
+
+			    			text-decoration: none;
+			    			color: white;
+			    			font-size: 10px;
+			    		}
+
 			}
 
 			.post-comments-container{
-				width: 50%;
+				width: 100%;
 			    margin: 10px auto;
-
-			    min-width: 300px;
-
+			    .comment-btn{
+						    background-color: #354c8c;
+						    border: medium none;
+						    box-shadow: none;
+						    color: #FFFFFF;
+						    cursor: pointer;
+						    padding: 1.6rem 2.4rem;
+						    text-transform: uppercase;
+						    width: 40px;
+    						height: 30px;
+						    
+				}	
 
 			    form{
 			    	display: flex;
 
 			    	input, textarea{
-			    		width: 50%;
+
+			    		width: 90%;
 		    		}
 			    }
+
 
 			    .comments-list{
 			    	list-style: none;
 			    	padding-top: 10px;
 			    	padding-left: 0;
-		    	    background-color: rgba(255, 160, 122, 0.35);
+
+		    	    background-color: #b2b9c9;
+
     				padding: 5px;
 			    	li{
 			    		border: 1px dashed grey;
@@ -101,7 +118,9 @@
 			    		a{
 
 			    			text-decoration: none;
-			    			color: red;
+
+			    			color: white;
+
 			    			font-size: 10px;
 			    		}
 			    	}
@@ -113,10 +132,47 @@
 	}
 }
 
+input[name="commit"] {
+	width: 5%	
+
+}
+
+
+
 .author-details{
 	font-size: 10px;
 }
 
+.user-like-status{
+	-webkit-font-smoothing: antialiased;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 1;
+
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #354c8c;
+  vertical-align: top;
+  white-space: nowrap;
+
+  color: #fff;
+  background: linear-gradient(#4c69ba, #3b55a0);
+
+  box-sizing: border-box;
+  display: inline-block;
+  height: 20px;
+  padding: 5px 5px 0 4px;
+
+  border: 0;
+  border-radius: 2px;
+}
+.user-like-count{
+	font-size: large; 
+  color: #999999; 
+  font-family: monospace; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
 
 
 #page-container{
@@ -124,11 +180,14 @@
 	flex-direction: row;
 
 	#posts-container{
-		width: 70%;
+
+		width: 85%;
 	}
 
 	#friends-container{
-		width: 25%;
+		background-color: #b2b9c9;
+		width: 15%;
+
 	    border-left: 1px solid black;
     	padding-left: 15px;
 	}
@@ -144,6 +203,7 @@
 		width: 100% !important;
 	}
 }
+
 
 
 
