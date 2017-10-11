@@ -33,24 +33,6 @@ class PostsController < ApplicationController
   def destroy
     @post_id = @post.id
   	@post.destroy
-  	
-  	@post = Post.new
-  	@comment = Comment.new
-  	@posts = Post.all
-  end
-
-  def create
-
-  	@post = Post.new(post_params)
-  	@post.user = current_user
-  	@post.save
-  	return redirect_to action: "index"
-
-  end
-
-  def destroy
-  	@post.destroy
-  	return redirect_to action: "index"
   end
 
   private
@@ -72,15 +54,3 @@ class PostsController < ApplicationController
   end
 
 end
-
-
-
-
-
-
-
-
-
-
-
-

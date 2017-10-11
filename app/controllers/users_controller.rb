@@ -16,7 +16,6 @@ class UsersController < ApplicationController
 			user[:label] = u.email
 			users_list << user
 		end
-
 		return render json: users_list
 	end
 
